@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Detector</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .form-container {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spam Detector</h1>
+        <div class="form-container">
+            <form action="/predict" method="post">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Enter a message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
